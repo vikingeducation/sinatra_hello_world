@@ -1,0 +1,10 @@
+<h1>Decoder Results</h1>
+<p>
+  Your decoded string is <%= decoded %>.
+</p>
+<p>
+  The original string is <%= reverser(decoded) %>
+</p>
+<% if decoded.length > 10 %>
+  <%= erb :length_warning, :locals => { :str => decoded } %>
+<% end %>
